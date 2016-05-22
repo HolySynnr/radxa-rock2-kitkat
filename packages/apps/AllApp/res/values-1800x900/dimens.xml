@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- view pager layout -->
+    <dimen name="viewpager_w">1837px</dimen>
+    <dimen name="viewpager_h">900px</dimen>
+    <dimen name="viewpager_icon_h">82px</dimen>
+    <dimen name="viewpager_icon_textsize">30px</dimen>
+    <dimen name="viewpager_left">75px</dimen>
+    <dimen name="viewpager_bottom">15px</dimen>
+    
+    <!-- view pager item layout -->
+    <dimen name="viewpager_item_h">358px</dimen>
+    <dimen name="viewpager_item_w">282px</dimen>
+    <dimen name="viewpager_item_padding">4px</dimen>
+    <dimen name="viewpager_item_padding_lr">22px</dimen>
+    <dimen name="viewpager_item_padding_tp">15px</dimen>
+    <dimen name="viewpager_item_textsize">45px</dimen>
+    <dimen name="viewpager_item_text_w">315px</dimen>
+    <dimen name="viewpager_item_text_bottom">7px</dimen>
+    <dimen name="viewpager_item_icon">112px</dimen>
+    <dimen name="viewpager_item_icon_left">3px</dimen>
+    <dimen name="viewpager_item_icon_top">6px</dimen>
+</resources>

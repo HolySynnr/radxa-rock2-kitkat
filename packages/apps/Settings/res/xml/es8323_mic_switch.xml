@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+	android:key="es8323_mic_switch_screen">
+
+	<PreferenceCategory android:key="es8323_mic_switch_list"
+		android:title="@string/es8323_mic_switch_mode">
+	</PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+	
+	<PreferenceScreen android:key="add_new_pppoe"
+		android:title="@string/pppoe_add_new_pppoe">
+	</PreferenceScreen>
+
+	<PreferenceScreen android:key="del_selected_pppoe"
+		android:title="@string/pppoe_del_selected_pppoe">
+	</PreferenceScreen>
+
+	<PreferenceCategory android:key="pppoe_accounts_list"
+		android:title="@string/pppoe_accounts">
+	</PreferenceCategory>
+
+</PreferenceScreen>
