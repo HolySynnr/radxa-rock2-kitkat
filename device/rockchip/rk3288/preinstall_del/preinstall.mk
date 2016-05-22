@@ -1,0 +1,1 @@
+PRODUCT_PACKAGES += DeviceTest_radxa_rock2_square

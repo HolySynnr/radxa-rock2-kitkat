@@ -1,0 +1,1 @@
+PRODUCT_PACKAGES += xbmc-rk3288-14a

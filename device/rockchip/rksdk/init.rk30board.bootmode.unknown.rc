@@ -1,0 +1,17 @@
+on fs
+    insmod /rk30xxnand_ko.ko
+# mount mtd partitions
+#    mount ext4 mtd@system /system wait ro noatime nodiratime noauto_da_alloc
+#    start readahead
+#    mount ext4 mtd@metadata /metadata wait noatime nodiratime nosuid nodev noauto_da_alloc
+#    mount ext4 mtd@userdata /data wait noatime nodiratime nosuid nodev noauto_da_alloc
+#    mount ext4 mtd@cache /cache wait noatime nodiratime nosuid nodev noauto_da_alloc
+    mount_all fstab.rk30board
+/devices/virtual/block/rknand_user              /mnt/internal_sd     vfat      defaults        voldmanaged=internal_sd:auto,noemulatedsd
+/devices/ff0c0000.rksdmmc/mmc_host/mmc          /mnt/external_sd     vfat      defaults        voldmanaged=external_sd:auto
+/devices/ff580000.usb                           /mnt/usb_storage/USB_DISK0     vfat      defaults        voldmanaged=usb_storage:auto
+/devices/ff580000.usb                           /mnt/usb_storage/USB_DISK1     vfat      defaults        voldmanaged=usb_storage:auto
+/devices/ff500000.usb                           /mnt/usb_storage/USB_DISK2     vfat      defaults        voldmanaged=usb_storage:auto
+/devices/ff500000.usb                           /mnt/usb_storage/USB_DISK3     vfat      defaults        voldmanaged=usb_storage:auto
+/devices/ff540000.usb                           /mnt/usb_storage/USB_DISK4     vfat      defaults        voldmanaged=usb_storage:auto
+/devices/ff540000.usb                           /mnt/usb_storage/USB_DISK5     vfat      defaults        voldmanaged=usb_storage:auto

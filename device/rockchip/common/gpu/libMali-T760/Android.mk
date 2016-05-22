@@ -1,0 +1,68 @@
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(strip $(TARGET_BOARD_PLATFORM)), rk3288)
+ifeq ($(strip $(TARGET_BOARD_PLATFORM_GPU)), Mali-T760)
+
+# Use BUILD_PREBUILT instead of PRODUCT_COPY_FILES to bring in the NOTICE file.
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_LIBS := ../libMali-T760/libGLES_mali.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(TARGET_OUT)/system/vendor/lib/egl
+include $(BUILD_MULTI_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_LIBS := mali_kbase.ko
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/modules
+include $(BUILD_MULTI_PREBUILT)
+
+endif
+endif
+
+ifeq ($(strip $(TARGET_BOARD_PLATFORM)), rk3188)
+ifeq ($(strip $(TARGET_BOARD_PLATFORM_GPU)), Mali400MP)
+
+
+# Use BUILD_PREBUILT instead of PRODUCT_COPY_FILES to bring in the NOTICE file.
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_LIBS := ../libMali-T760/libEGL_mali.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/egl
+include $(BUILD_MULTI_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_LIBS := ../libMali-T760/libGLESv1_CM_mali.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/egl
+include $(BUILD_MULTI_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_LIBS := ../libMali-T760/libGLESv2_mali.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/egl
+include $(BUILD_MULTI_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_LIBS := ../libMali-T760/libMali.so
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_MULTI_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_LIBS := ../libMali-T760/libUMP.so
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_MULTI_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_LIBS := mali.ko.3.10.0
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/modules
+include $(BUILD_MULTI_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_PREBUILT_LIBS := ump.ko.3.10.0
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/modules
+include $(BUILD_MULTI_PREBUILT)
+
+endif
+endif

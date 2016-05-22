@@ -1,0 +1,19 @@
+package com.rockchip.ebookreader.jni;
+
+public class BITMAPSurface {
+	
+	public BITMAPSurface(int w, int h)
+	{ 
+		this.width = w;
+		this.height = h;
+		pdata = new char[w*h*4]; 
+	}
+	//~BITMAPSurface() { delete[] pdata; }
+	public int getWidth() { return width; }
+	public int getHeight() { return height; }
+	public char []getPtr() { return pdata; }
+
+	private char []pdata;
+	private int width;
+	private int height;
+}

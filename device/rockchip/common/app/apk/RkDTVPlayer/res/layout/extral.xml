@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/videotopbar">
+    <LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:paddingBottom="10dip">
+	    <ImageView
+	    	android:id="@+id/serviceicon"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center_vertical"
+	    	android:src="@drawable/tv_icon_small"/>
+	    <TextView 
+			android:id="@+id/servicename"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip" 
+			android:textSize="30dip"
+			android:textColor="@color/white"
+			android:singleLine="true"/>			
+	</LinearLayout>
+	<!-- 
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_gravity="center_vertical">
+	    
+	    <TextView
+	    	android:id="@+id/prompt1"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:singleLine="true"
+	    	android:textColor="@color/yellow"
+	    	android:layout_gravity="center_horizontal"/>
+   		<TextView
+	    	android:id="@+id/prompt2"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:singleLine="true"
+	    	android:textColor="@color/yellow"
+	    	android:layout_gravity="center_horizontal"/>
+	    	
+    </LinearLayout>
+     
+    <TextView 
+		android:id="@+id/currtime"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|right"
+		android:textSize="30dip"
+		android:singleLine="true"/>
+		-->	
+</RelativeLayout>

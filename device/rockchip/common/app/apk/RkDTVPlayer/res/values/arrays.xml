@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="array_menu">
+		<item>Video Broadcast</item>
+		<item>Radio Broadcast</item>
+		<item>Favorite Programs</item>
+		<item>Utilities/Setup</item>
+	</string-array>
+	<!-- 
+		<item>Scan Channels</item>
+		<item>EPG</item> -->
+	<string-array name="weekday">
+		<item>Mon</item>
+		<item>Tue</item>
+		<item>Wed</item>
+		<item>Thu</item>
+		<item>Fri</item>
+		<item>Sat</item>
+		<item>Sun</item>
+	</string-array>
+	
+	<string-array name="month">
+		<item>Jan</item>
+		<item>Feb</item>
+		<item>Mar</item>
+		<item>Apr</item>
+		<item>May</item>
+		<item>Jun</item>
+		<item>Jul</item>
+		<item>Aug</item>
+		<item>Sept</item>
+		<item>Oct</item>
+		<item>Nov</item>
+		<item>Dec</item>
+	</string-array>
+	
+	<string-array name="epgweekday">
+		<item>Sunday</item>
+		<item>Monday</item>
+		<item>Tuesday</item>
+		<item>Wednesday</item>
+		<item>Thursday</item>
+		<item>Friday</item>
+		<item>Saturday</item>
+	</string-array>
+	
+	<string-array name="array_area_set_dvb">
+		<item>Germany (DVB-T)</item>
+		<item>UK (DVB-T)</item>
+		<item>Spain (DVB-T)</item>
+		<item>Italy (DVB-T)</item>
+		<item>France (DVB-T)</item>
+		<item>Netherlands (DVB-T)</item>
+		<item>China (DVB-T)</item>
+		<item>Chinese Taiwan (DVB-T)</item>
+		<item>Australia (DVB-T)</item>
+		<item>Austria (DVB-T)</item>
+		<item>Belgium (DVB-T)</item>
+		<item>Denmark (DVB-T)</item>
+		<item>Finland (DVB-T)</item>
+		<item>Luxebourg (DVB-T)</item>
+		<item>Norway (DVB-T)</item>
+		<item>Russian (DVB-T)</item>
+		<item>Sweden (DVB-T)</item>
+		<item>Switzerland (DVB-T)</item>
+		<item>Chinese Hongkong (DVB-T)</item>
+		<item>India (DVB-T)</item>
+		<item>Indonesia (DVB-T)</item>
+		<item>Malaysia (DVB-T)</item>
+		<item>Newzealand (DVB-T)</item>
+		<item>Philippines (DVB-T)</item>
+		<item>Singapore (DVB-T)</item>
+		<item>Thailand (DVB-T)</item>
+		<item>Vietnam (DVB-T)</item>
+		<item>Others (DVB-T)</item>
+	</string-array>
+	
+	<string-array name="array_area_set_isdb_oneseg">
+		<item>Japan (ISDB-1Seg)</item>		
+		<item>Brazil (ISDB-1Seg)</item>
+
+	</string-array>
+	
+	<string-array name="array_area_set_isdb_fullseg">
+		<item>Japan (ISDB-Fullseg)</item>		
+		<item>Brazil (ISDB-Fullseg)</item>
+	</string-array>
+	
+	
+	<string-array name="array_area_set_atsc">
+		<item>USA (ATSC-T)</item>
+		<item>Canada (ATSC-T)</item>
+	</string-array>
+	
+	<string-array name="array_band_width">
+		<item>6000KHz</item>
+		<item>7000KHz</item>
+		<item>8000KHz</item>
+	</string-array>
+	
+	<string-array name="array_scale_set">
+		<item>Full Screen</item>
+		<item>Fit Screen</item>
+		<item>16:9 Screen</item>
+		<item>4:3 Screen</item>
+		<item>Half Screen</item>
+	</string-array>
+	
+	<string-array name="pol_sel">
+		<item>VERTICAL</item>
+		<item>HORIZONTAL</item>
+	</string-array>
+	<string-array name="array_service_order">
+		<item>Order by service ID</item>
+		<item>Order by service Name</item>
+		<item>Order by service LCN</item>
+	</string-array>
+	<string-array name="s22k_sel">
+		<item>22K ON</item>
+		<item>22K OFF</item>
+	</string-array>	
+</resources>

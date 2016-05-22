@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:gravity="center"
+  android:background="@drawable/chooseservicebg">
+   	<TextView
+	    android:id="@+id/autoscan"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/auto_scan"
+	    android:textSize="35sp"
+		android:textColor="@color/white"
+		android:gravity="center"
+		android:layout_marginTop="15dip"/>
+	<RelativeLayout
+	  android:id="@+id/frontend"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginTop="40dip">
+	  <TextView
+	    android:id="@+id/frontendlabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="10dip"
+	    android:text="@string/frontend_label"
+	    android:textSize="22sp"/>
+	  <TextView
+	    android:id="@+id/dvttlabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10dip"
+	    android:gravity="right"
+	    android:text="@string/dvbt_label"
+	    android:textSize="22sp"/>
+	</RelativeLayout>
+	
+	<RelativeLayout
+	  android:id="@+id/area"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginTop="20dip">
+	  <TextView
+	    android:id="@+id/arealabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="10dip"
+	    android:text="@string/area_label"
+	    android:textSize="22sp"/>
+        <Spinner 
+            android:id="@+id/areaSpinner" 
+	        android:layout_width="wrap_content"
+            android:layout_height="55dip"
+            		android:textColor="@color/background"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dip"
+            android:prompt="@string/area_sel" /> 
+            
+	</RelativeLayout>
+	
+	<CheckBox 
+	      android:id="@+id/scanlcn"
+	      android:layout_width="wrap_content" 
+	      android:layout_height="wrap_content"
+	      android:text="@string/scan_lcn"
+	      ></CheckBox>
+
+	<Button
+	   android:id="@+id/okbtn"
+	   android:gravity="center"
+	   android:layout_width="200dip"
+	   android:layout_height="wrap_content"
+	   android:text="@string/str_ok"
+	   android:layout_marginTop="40dip"/>
+	   
+</LinearLayout>

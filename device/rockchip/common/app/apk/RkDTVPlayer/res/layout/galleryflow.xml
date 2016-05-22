@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/background">
+  	<TextView
+  		android:id="@+id/topbar"
+  		android:background="@drawable/topbar"
+  		android:textAppearance="?android:attr/textAppearanceLarge"
+  		android:textColor="@color/blue"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_alignParentTop="true"
+  		android:paddingTop="10dip"
+  		android:gravity="right"/>
+  	<ImageView
+  		android:id="@+id/bottombar"
+  		android:src="@drawable/bottombar"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_alignParentBottom="true"/>
+  	 <TextView
+		android:id="@+id/txtViewDetail"
+		android:textColor="@color/white"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textSize="40dip"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_above="@id/bottombar"
+		android:layout_marginBottom="90dip"/>
+		
+	<view class = "com.rockchip.tvbox.view.GalleryFlow"
+		android:id="@+id/gallery" 
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent" 
+	  	android:layout_below="@id/topbar" 
+	  	android:layout_above="@id/bottombar"/>
+	  	
+
+
+</RelativeLayout>

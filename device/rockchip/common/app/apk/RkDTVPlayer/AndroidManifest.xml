@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.rockchip.tvbox.activity"
+      android:versionCode="1"
+      android:versionName="1.0"
+      android:sharedUserId="android.uid.system">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+    
+	    <provider android:name="com.rockchip.tvbox.provider.TVProgramProvider" 
+	    		  android:authorities="com.rockchip.tvbox.provider.TVProgram" />
+	    		  
+        <activity android:name=".MainMenuActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<action android:name="android.intent.action.EDIT" />
+				<action android:name="android.intent.action.PICK" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.rockchip.programs" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.GET_CONTENT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.rockchip.programs" />
+			</intent-filter>
+        </activity>
+        
+		<activity android:name=".ServiceListActivity" 
+				  android:label="@string/app_name"
+				  android:screenOrientation="landscape">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".VideoPlayerActivity"  
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>  
+            	<action android:name="android.intent.action.VIEW"/> 
+          		<data android:mimeType="video/*"/>   
+          		<category android:name="android.intent.category.DEFAULT"/> 
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name=".EPGActivity"  
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>  
+            	<action android:name="android.intent.action.VIEW"/> 
+          		<category android:name="android.intent.category.DEFAULT"/> 
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name=".HomeActivity"  
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>  
+            	<action android:name="android.intent.action.VIEW"/> 
+          		<category android:name="android.intent.category.DEFAULT"/> 
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name=".SettingPreferences"  
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>  
+            	<action android:name="android.intent.action.VIEW"/> 
+          		<category android:name="android.intent.category.DEFAULT"/> 
+            </intent-filter>
+            
+        </activity>
+        <activity android:name=".RecordActivity"  
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">
+            <intent-filter>  
+            	<action android:name="android.intent.action.VIEW"/> 
+          		<category android:name="android.intent.category.DEFAULT"/> 
+            </intent-filter>
+            
+        </activity>        
+    <!-- Permission to show the UI for firmware update --> 
+    <permission android:name="android.rockchip.update.permission.SHOW_UI"
+        android:label="@string/app_name"
+        android:description="@string/app_name"
+        android:protectionLevel="signature" />
+  <uses-permission android:name="android.rockchip.update.permission.SHOW_UI" />     	 		
+    </application>
+
+	<uses-permission android:name="rockchip.permission.FULL_SCREEN" /> 
+	<uses-permission android:name="android.permission.INTERNET" /> 
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+	<uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" /> 
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> 
+	<uses-permission android:name="android.permission.WAKE_LOCK" /> 
+	<uses-permission android:name="android.permission.HARDWARE_TEST" /> 
+	<uses-permission android:name="android.permission.DEVICE_POWER" /> 
+	<uses-sdk android:minSdkVersion="4" />
+</manifest> 

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:gravity="center"
+  android:background="@drawable/chooseservicebg">
+   	<TextView
+	    android:id="@+id/channelsearch"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/channel_search"
+	    android:textSize="35sp"
+		android:textColor="@color/white"
+		android:gravity="center"
+		android:layout_marginTop="15dip"/>
+	<RelativeLayout
+	  android:id="@+id/freqinput"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginTop="40dip">
+	  <TextView
+	    android:id="@+id/freqlabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="10dip"
+	    android:text="@string/freq_label"
+	    android:textSize="22sp"/>
+	  <EditText
+	    android:id="@+id/freqEdit"
+	    android:layout_width="130px"
+	    android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10dip"
+	    android:gravity="right"
+	    android:textSize="18sp"
+	    android:numeric="decimal"
+	    android:textStyle="italic|bold"
+	    android:maxLength="7"/>
+	</RelativeLayout>
+	
+	<RelativeLayout
+	  android:id="@+id/lnbfreq"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginTop="40dip">
+	  <TextView
+	    android:id="@+id/lnbfreqlabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="10dip"
+	    android:text="@string/lnbfreq_label"
+	    android:textSize="22sp"/>
+	  <EditText
+	    android:id="@+id/lnbfreqEdit"
+	    android:layout_width="130px"
+	    android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10dip"
+	    android:gravity="right"
+	    android:textSize="18sp"
+	    android:numeric="decimal"
+	    android:textStyle="italic|bold"
+	    android:maxLength="7"/>
+	</RelativeLayout>	
+	
+	<RelativeLayout
+	  android:id="@+id/rateinput"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginTop="20dip">
+	  <TextView
+	    android:id="@+id/ratelabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="10dip"
+	    android:text="@string/rate_label"
+	    android:textSize="22sp"/>
+	  <EditText
+	    android:id="@+id/rateEdit"
+	    android:layout_width="130px"
+	    android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10dip"
+	    android:gravity="right"
+	    android:textSize="18sp"
+	    android:numeric="decimal"
+	    android:textStyle="italic|bold"
+	    android:maxLength="7"/>
+	</RelativeLayout>
+	
+	<RelativeLayout
+	  android:id="@+id/polinput"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginTop="20dip">
+	  <TextView
+	    android:id="@+id/pollabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="10dip"
+	    android:text="@string/pol_label"
+	    android:textSize="22sp"/>
+        <Spinner 
+            android:id="@+id/polSpinner" 
+	        android:layout_width="130px"
+            android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dip"
+            android:entries="@array/pol_sel" 
+            android:prompt="@string/pol_ver" /> 
+            
+	</RelativeLayout>
+
+	<RelativeLayout
+	  android:id="@+id/s22kmode"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginTop="20dip">
+	  <TextView
+	    android:id="@+id/s22kmodetitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="10dip"
+	    android:text="@string/s22kmode_label"
+	    android:textSize="22sp"/>
+
+        <Spinner 
+            android:id="@+id/s22kSpinner" 
+	        android:layout_width="130px"
+            android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dip"
+            android:entries="@array/s22k_sel" 
+            android:prompt="@string/s22k_mode" /> 
+            
+	</RelativeLayout>	
+	
+	<Button
+	   android:id="@+id/okbtn"
+	   android:gravity="center"
+	   android:layout_width="200dip"
+	   android:layout_height="wrap_content"
+	   android:text="@string/str_ok"
+	   android:layout_marginTop="40dip"/>
+	   
+</LinearLayout>

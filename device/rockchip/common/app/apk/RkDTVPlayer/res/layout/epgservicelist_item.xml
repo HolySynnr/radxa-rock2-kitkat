@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/listview_sel_states">
+
+	<ImageView 
+		android:id="@+id/channel_icon" 
+		android:src="@drawable/tv_icon_small"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content" 
+		android:layout_marginLeft="8dip"
+		android:layout_marginTop="15dip"
+		android:layout_marginRight="5dip"
+		android:layout_marginBottom="15dip"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true">
+	</ImageView>
+	<TextView 
+		android:id="@+id/right_arrow"
+		android:layout_width="wrap_content" 
+		android:layout_height="fill_parent"
+		android:text="@string/rightArrow"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:ellipsize="marquee"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10dip">
+	</TextView>
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:layout_centerVertical="true"
+		android:layout_toRightOf="@id/channel_icon"
+		android:layout_toLeftOf="@id/right_arrow">
+		<TextView 
+			android:id="@+id/ptitle"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:layout_marginLeft="8dip" 
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:ellipsize="marquee"
+			android:marqueeRepeatLimit="3"
+			android:singleLine="true">
+		</TextView>
+		<!-- 
+		<TextView 
+			android:id="@+id/freq"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:layout_marginLeft="8dip"
+			android:ellipsize="marquee"
+			android:marqueeRepeatLimit="3"
+			android:singleLine="true">
+		</TextView>
+		 -->
+	</LinearLayout>
+
+</RelativeLayout>

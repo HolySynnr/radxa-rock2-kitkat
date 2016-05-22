@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@drawable/listview_sel_states">
+
+	<TextView 
+		android:id="@+id/programText"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:minHeight="45dip"
+		android:paddingLeft="10dip"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:ellipsize="marquee"
+		android:marqueeRepeatLimit="3"
+		android:singleLine="true">
+	</TextView>
+
+</RelativeLayout>

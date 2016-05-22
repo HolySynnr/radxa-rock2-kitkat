@@ -1,0 +1,73 @@
+/* 
+ * Copyright(C) ROCKCHIP LIMITED 2010
+ * @author cqs
+ */
+package com.rockchip.ebookreader.jni;
+import android.graphics.Bitmap;
+
+public class JNIInterface {
+	static {
+		// System.out.println(System.getProperty("java.library.path"));
+		// System.loadLibrary("adobe_rmsdk_device");
+		// System.loadLibrary("adobe_rmsdk_simulator");
+		System.loadLibrary("ereader");
+	}
+	
+	public native int JNI_ereader_probe(String name);
+
+	public native int JNI_ereader_open(String filename, double viewport_width,
+			double viewport_height, double margin_vertical,
+			double margin_horizontal, String fontdir, String chsfont,
+			String chtfont, String korfont, String jpnfont, String ttffont,
+			double fontsize, int verbose,int format, boolean reflow);
+
+	public native int JNI_ereader_decode(int handle, Bitmap BitmapObj, double scale, int direction, int pagecount, int isrender, boolean noPNG, int adaption_mode);
+
+	public native int JNI_ereader_close(int handle, int freeindex);
+
+	public native String JNI_ereader_get_metadata(int handle, String result);
+
+	public native int JNI_ereader_page_jump(int handle, int page);
+
+	public native String[] JNI_ereader_get_bookmark(int handle);
+
+	public native int JNI_ereader_navigate_to_bookmark(int handle,
+			String bookmark);
+
+	public native int JNI_ereader_preprocess(String filename,
+			double viewport_width, double viewport_height,
+			double margin_vertical, double margin_horizontal, String fontdir,
+			String chsfont, String chtfont, String korfont, String jpnfont,
+			String ttffont, double fontsize, int verbose, boolean reflow);
+
+	public native int JNI_ereader_get_width(int handle);
+
+	public native int JNI_ereader_get_height(int handle);
+
+	public native int JNI_ereader_get_total_page(int handle);
+
+	public native int JNI_ereader_get_current_page(int handle);
+
+	public native int JNI_ereader_set_viewport(int handle, double viewport_w,
+			double viewport_h, double margin_v, double margin_h);
+
+	public native int JNI_ereader_set_font_size(int handle, int fontSize);
+
+	public native int JNI_ereader_set_paging_mode(int handle, int mode);
+
+	public native int JNI_ereader_set_charset(int handle, String charset);
+
+	public native String JNI_ereader_get_version(int handle);
+
+	public native int JNI_ereader_db_path(String dir);
+
+	public native int JNI_ereader_build_database(String dir,int w,int h );
+	
+	public native int JNI_ereader_update_database();
+	
+	public native String JNI_ereader_get_version();
+	
+	public native boolean JNI_ereader_db_updating();
+
+	public native int JNI_ereader_update_percent();
+}

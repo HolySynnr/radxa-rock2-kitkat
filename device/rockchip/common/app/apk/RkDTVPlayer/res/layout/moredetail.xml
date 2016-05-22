@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/moredetailbg">
+<RadioGroup 
+	android:id="@+id/main_tab"
+	android:orientation="horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical">
+	<RadioButton 
+		android:layout_marginTop="2.0dip"
+		android:text="@string/tab_subtitle"
+		android:drawableTop="@drawable/more_head_states1"
+		android:id="@+id/radio_button0"
+		style="@style/more_tab_header"
+		android:nextFocusLeft="@+id/radio_button4"
+		android:nextFocusDown="@+id/settingList"/>
+	<RadioButton 
+		android:layout_marginTop="2.0dip"
+		android:text="@string/tab_teletxt"
+		android:drawableTop="@drawable/more_head_states2"
+		android:id="@+id/radio_button1"
+		style="@style/more_tab_header"/>
+	<RadioButton 
+		android:layout_marginTop="2.0dip"
+		android:text="@string/tab_audio"
+		android:drawableTop="@drawable/more_head_states3"
+		android:id="@+id/radio_button2"
+		style="@style/more_tab_header"/>
+	<RadioButton 
+		android:layout_marginTop="2.0dip"
+		android:text="@string/tab_scale"
+		android:drawableTop="@drawable/more_head_states4"
+		android:id="@+id/radio_button3"
+		style="@style/more_tab_header"/>
+	<RadioButton 
+		android:layout_marginTop="2.0dip"
+		android:text="@string/tab_info"
+		android:drawableTop="@drawable/more_head_states5"
+		android:id="@+id/radio_button4"
+		style="@style/more_tab_header"
+		android:nextFocusRight="@+id/radio_button0"/>
+</RadioGroup>
+<LinearLayout 
+		android:id="@+id/moreTabBody"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<ImageView 
+			android:id="@+id/containerBody"
+			android:focusable="false"
+			android:clickable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/more1"
+			android:visibility="gone">
+		</ImageView>
+		<ListView
+			android:id="@+id/settingList"
+			android:focusable="true"
+			android:background="@drawable/listbg"
+			android:cacheColorHint="#00000000" 
+			android:layout_width="644dip"
+			android:layout_height="300dip"
+			android:divider="@null">
+		</ListView>
+</LinearLayout>
+</LinearLayout>
